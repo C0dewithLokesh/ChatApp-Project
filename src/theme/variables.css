@@ -266,3 +266,18 @@
   background-color: transparent;
   box-shadow: none;
 }
+
+/* 
+  Home
+*/
+
+.user-img::before {
+  content: '';
+  background-color: lightgreen;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 3px;
+  bottom: 0;
+  border-radius: 50%;
+}

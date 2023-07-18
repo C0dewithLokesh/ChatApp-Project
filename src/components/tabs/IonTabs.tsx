@@ -13,6 +13,7 @@ import Tab1 from '../../pages/Tab1';
 import Tab2 from '../../pages/Tab2';
 import Tab3 from '../../pages/Tab3';
 import { IonReactRouter } from '@ionic/react-router';
+import Home from '../home/Home';
 
 const Tabs = () => {
   return (
@@ -20,7 +21,7 @@ const Tabs = () => {
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/home">
-            <Tab1 />
+            <Home />
           </Route>
           <Route exact path="/tab2">
             <Tab2 />
@@ -32,7 +33,7 @@ const Tabs = () => {
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/home">
             <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon aria-hidden="true" icon={ellipse} />
