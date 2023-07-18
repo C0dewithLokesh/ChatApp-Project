@@ -1,4 +1,5 @@
 import { Route } from 'react-router-dom';
+import { IonReactRouter } from '@ionic/react-router';
 import {
   IonIcon,
   IonLabel,
@@ -9,10 +10,8 @@ import {
 } from '@ionic/react';
 
 import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab1 from '../../pages/Tab1';
 import Tab2 from '../../pages/Tab2';
 import Tab3 from '../../pages/Tab3';
-import { IonReactRouter } from '@ionic/react-router';
 import Home from '../home/Home';
 
 const Tabs = () => {
@@ -30,6 +29,7 @@ const Tabs = () => {
             <Tab3 />
           </Route>
         </IonRouterOutlet>
+
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/home">
             <IonIcon aria-hidden="true" icon={triangle} />

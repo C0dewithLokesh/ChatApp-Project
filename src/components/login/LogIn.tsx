@@ -5,16 +5,16 @@ import { BsEye } from "react-icons/bs";
 const LogIn = () => {
   return (
     <IonPage className="login-page flex realtive justify-start">
-      <div className="flex justify-between items-center mt-7 text-white px-6">
+      {/* <div className="flex justify-between items-center mt-7 text-white px-6">
         <AiOutlineLeft className="font-bold" />
         <div className="flex justify-end items-center gap-2">
           <p className="text-gray-300 text-sm">Dont't have an Account?</p>
           <button className="backdrop-blur-sm bg-white/30 px-2 py-1 rounded-md text-[15px]">Get Started</button>
         </div>
-      </div>
+      </div> */}
 
       <h1 className="mt-16 text-center text-5xl font-semibold text-white">
-        Jobsly
+        Retentive
       </h1>
 
       <div className="login-bottom bg-white text-black absolute w-full bottom-0 h-[65%] flex items-center rounded-t-[30px] p-6 flex-col gap-[50px]">
