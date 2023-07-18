@@ -7,7 +7,7 @@ import artLogo from "/code.png";
 
 const Home = () => {
   return (
-    <IonPage className="p-2 justify-start gap-10 items-center overflow-scroll">
+    <IonPage className="p-2 justify-start gap-10 items-center overflow-scroll bg-white">
       <div className="w-full flex justify-between items-center px-3 mt-5">
         <div className="user-img relative">
           <img src={userImg} alt="user-Img" className="w-11 rounded-[50%] overflow-hidden" />

@@ -1,18 +1,18 @@
-import { Route } from 'react-router-dom';
-import { IonReactRouter } from '@ionic/react-router';
+import { Route } from "react-router-dom";
+import { IonReactRouter } from "@ionic/react-router";
 import {
   IonIcon,
   IonLabel,
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
-  IonTabs
-} from '@ionic/react';
+  IonTabs,
+} from "@ionic/react";
 
-import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab2 from '../../pages/Tab2';
-import Tab3 from '../../pages/Tab3';
-import Home from '../home/Home';
+import { ellipse, square, triangle } from "ionicons/icons";
+import Tab3 from "../../pages/Tab3";
+import Home from "../home/Home";
+import Chatbot from "../home/Chatbot";
 
 const Tabs = () => {
   return (
@@ -22,10 +22,10 @@ const Tabs = () => {
           <Route exact path="/home">
             <Home />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route path="/chatbot">
+            <Chatbot />
           </Route>
-          <Route path="/tab3">
+          <Route exact path="/tab3">
             <Tab3 />
           </Route>
         </IonRouterOutlet>
@@ -35,7 +35,7 @@ const Tabs = () => {
             <IonIcon aria-hidden="true" icon={triangle} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="tab2" href="/chatbot">
             <IonIcon aria-hidden="true" icon={ellipse} />
             <IonLabel>Tab 2</IonLabel>
           </IonTabButton>
@@ -46,7 +46,6 @@ const Tabs = () => {
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
-    
   );
 };
 
