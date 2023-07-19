@@ -88,13 +88,13 @@ const Chatbot = () => {
             className="msg-content-inside bot flex flex-wrap gap-2"
           >
             <div className="dropdown-item border border-[#450093] rounded-[30px] p-2">
-              Apply for Leave
+              Leave Overview
             </div>
             <div className="border border-[#450093] rounded-[30px] p-2">
               Apply for Leave
             </div>
             <div className="border border-[#450093] rounded-[30px] p-2">
-              Apply for Leave
+              Company holiday sheet
             </div>
           </div>
         </div>

@@ -395,6 +395,7 @@
 
 .msg-input {
   --background: transparent;
+  --border-style: none;
 }
 
 .msg-container::-webkit-scrollbar {
