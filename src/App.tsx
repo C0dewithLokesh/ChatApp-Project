@@ -35,6 +35,12 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Tabs />
         </Route>
+        <Route exact path="/chatbot">
+          <Tabs />
+        </Route>
+        <Route exact path="/tab3">
+          <Tabs />
+        </Route>
         <Route exact path="/">
           <Redirect to="/login" />
         </Route>

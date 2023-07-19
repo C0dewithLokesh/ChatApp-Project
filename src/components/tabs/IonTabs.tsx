@@ -2,19 +2,17 @@ import { Route } from "react-router-dom";
 import { IonReactRouter } from "@ionic/react-router";
 import {
   IonIcon,
-  IonLabel,
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
   IonTabs,
 } from "@ionic/react";
 
-import { ellipse, home, square } from "ionicons/icons";
+import { home } from "ionicons/icons";
 import Tab3 from "../../pages/Tab3";
 import Home from "../home/Home";
 import Chatbot from "../home/Chatbot";
-import { FaRegUser, FaRobot } from "react-icons/fa";
-import { RiProfileLine } from "react-icons/ri";
+import { FaRegUser } from "react-icons/fa";
 import { BsRobot } from "react-icons/bs";
 
 const Tabs = () => {

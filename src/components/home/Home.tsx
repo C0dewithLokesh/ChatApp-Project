@@ -1,4 +1,4 @@
-import { IonPage } from "@ionic/react";
+import { IonContent, IonItem, IonPage } from "@ionic/react";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsSoundwave } from "react-icons/bs";
 import userImg from "/user.jpg";
@@ -17,15 +17,21 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bot-circle flex flex-col items-center rounded-[50%] gap-4 p-10 border-[0px] border-[#cdaae3] bg-[#e4cff1c3] relative">
-        <p className="text-gray-200 font-medium">Hi, Todd 👋</p>
+      <IonItem routerLink='/chatbot' className="bot-circle-wrapper">
+        <div className="bot-circle flex flex-col items-center rounded-[50%] gap-4 p-10 border-[0px] border-[#cdaae3] bg-[#e4cff1c3] relative">
+          <p className="text-white font-medium">Hi, Todd 👋</p>
+          <h1 className="bot-btn text-2xl text-black">Tap to Chat</h1>
+          <BsSoundwave size={'40px'} color="white" />
+        </div>
+      </IonItem>
+      {/* <div className="bot-circle flex flex-col items-center rounded-[50%] gap-4 p-10 border-[0px] border-[#cdaae3] bg-[#e4cff1c3] relative">
+        <p className="text-white font-medium">Hi, Todd 👋</p>
         <h1 className="bot-btn text-2xl text-black">Tap to Chat</h1>
         <BsSoundwave size={'40px'} color="white" />
-      </div>
+      </div> */}
 
       <div className="w-full flex flex-col gap-4">
         <h1 className="p-3 text-3xl font-medium text-white">Explore</h1>
-
         <HomeCards />
       </div>
     </IonPage>
