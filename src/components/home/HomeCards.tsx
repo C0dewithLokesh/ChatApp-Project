@@ -30,10 +30,12 @@ const HomeCards = () => {
     {
       icon: <AiOutlineMessage color="#8629bc" size={'62px'} />,
       title: 'Leave',
+      dropdown: ['Apply for Leave', 'Leave Overview', 'Holiday Sheet']
     },
     {
       icon: <RiHandHeartFill color="#8629bc" size={'62px'} />,
       title: 'Core HR',
+      dropdown: ['Apply for Leave', 'Leave Overview', 'Holiday Sheet']
     },
     {
       icon: <MdCardGiftcard color="#8629bc" size={'62px'} />,

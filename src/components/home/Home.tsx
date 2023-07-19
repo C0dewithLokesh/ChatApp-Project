@@ -1,4 +1,4 @@
-import { IonContent, IonItem, IonPage } from "@ionic/react";
+import { IonItem, IonPage } from "@ionic/react";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsSoundwave } from "react-icons/bs";
 import userImg from "/user.jpg";

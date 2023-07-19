@@ -451,3 +451,9 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+.dropdown-item:hover, 
+.dropdown-item:active {
+  background-color: #75509e;
+  color: white;
+} 
