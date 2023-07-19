@@ -9,10 +9,13 @@ import {
   IonTabs,
 } from "@ionic/react";
 
-import { ellipse, square, triangle } from "ionicons/icons";
+import { ellipse, home, square } from "ionicons/icons";
 import Tab3 from "../../pages/Tab3";
 import Home from "../home/Home";
 import Chatbot from "../home/Chatbot";
+import { FaRegUser, FaRobot } from "react-icons/fa";
+import { RiProfileLine } from "react-icons/ri";
+import { BsRobot } from "react-icons/bs";
 
 const Tabs = () => {
   return (
@@ -30,18 +33,15 @@ const Tabs = () => {
           </Route>
         </IonRouterOutlet>
 
-        <IonTabBar slot="bottom">
+        <IonTabBar slot="bottom" className="tabs-container bg-white">
           <IonTabButton tab="tab1" href="/home">
-            <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Home</IonLabel>
+            <IonIcon aria-hidden="true" icon={home}  />
           </IonTabButton>
           <IonTabButton tab="tab2" href="/chatbot">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+            <BsRobot aria-hidden="true" size={'24px'} />
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+            <FaRegUser aria-hidden="true" size={'24px'} />
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

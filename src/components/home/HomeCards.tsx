@@ -1,5 +1,5 @@
 import { AiOutlineMessage } from "react-icons/ai";
-import { BsClipboard, BsFillFileEarmarkCodeFill } from "react-icons/bs";
+import { BsClipboard } from "react-icons/bs";
 import { RiHandHeartFill } from "react-icons/ri";
 import { MdCardGiftcard } from "react-icons/md";
 import { FaFileInvoiceDollar } from "react-icons/fa";
